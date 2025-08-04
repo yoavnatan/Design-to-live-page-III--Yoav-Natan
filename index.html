@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="main-layout">
+
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <header class="main-header full">
+        <div class="inner-container flex">
+            <div class="logo">Blogin<span>.</span></div>
+            <nav class="main-nav">
+                <ul class="main-nav-list clean-list flex">
+                    <li class="journal" onclick="onClickJournal()"><a class="active" href="#">Journal</a>
+                        <div class="dropdown-menu">
+                            <ul class="dropdown-list clean-list flex">
+                                <li><a href="">Obtober 2016</a></li>
+                                <li><a href="">Junuary 2017</a></li>
+                                <li><a href="">April 2017</a></li>
+                                <li><a href="">July 2017</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn-toggle-menu " type="button" onclick="toggleMenu()">☰</button>
+        </div>
+
+
+    </header>
+
+    <main class="main-content cards-layout">
+
+        <div class="card">
+            <img src="./img/001.jpg" alt="" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.
+                </h2>
+                <div class="card-text-container">
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex
+                    </p>
+                    <p class="card-text"> ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="cta card-btn btn rounded arrow" onclick="onClickRead()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/002.jpg" alt="" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.
+                </h2>
+                <div class="card-text-container">
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex
+                    </p>
+                    <p class="card-text"> ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="cta card-btn btn rounded arrow" onclick="onClickRead()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./img/003.jpg" alt="" class="card-image">
+            <div class="card-content">
+
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.
+                </h2>
+                <div class="card-text-container">
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex
+                    </p>
+                    <p class="card-text"> ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <button class="cta card-btn btn rounded arrow" onclick="onClickRead()">Continue Reading</button>
+            </div>
+
+        </div>
+    </main>
+    <section class="page-container flex space-between">
+        <h3 class="prev-btn">Previous</h3>
+        <h3 class="next-btn">Next</h3>
+    </section>
+
+    <footer class="main-footer full">
+        <div class="inner-container-footer flex align-center space-between">
+            <div class="logo">Blogin<span>.</span></div>
+            <small class="footer-rights">© Bligin.com - All Rights Reserved - Find more free Templates at <a
+                    href="#">Pixelhint.com</a></small>
+            <ul class="footer-social clean-list flex ">
+                <li><a href="#" class="fa facebook"></a></li>
+                <li><a href="#" class="fa twitter"></a></li>
+                <li><a href="#" class="fa behance"></a></li>
+                <li><a href="#" class="fa dribble"></a></li>
+
+        </div>
+        </ul>
+    </footer>
+
+    <dialog class="details-modal">
+        <form method="dialog">
+            <h1> lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem reprehenderit. Ducimus minus
+                vero, eos quibusdam praesentium eius dolore non nobis labore aperiam ad quo. Non nihil qui sint iusto!
+            </p>
+            <button> CLOSE</button>
+        </form>
+    </dialog>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+            document.querySelector('.btn-toggle-menu').innerText = (document.querySelector('.btn-toggle-menu').innerText === '☰') ? 'X' : '☰'
+            document.querySelector('.journal').classList.remove('journal-open')
+        }
+
+        function onClickRead() {
+            document.querySelector('.details-modal').showModal()
+        }
+
+        function onClickJournal() {
+            document.querySelector('.journal').classList.toggle('journal-open')
+        }
+    </script>
+</body>
+
+</html>

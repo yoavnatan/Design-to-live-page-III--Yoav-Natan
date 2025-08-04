@@ -1,0 +1,45 @@
+.main-nav .main-nav-list>li {
+    border-inline-end: 1px solid #000;
+}
+
+.main-nav .main-nav-list>li:first-child {
+    border-inline-start: 1px solid #000;
+}
+
+
+.main-nav .main-nav-list a {
+    display: grid;
+    place-items: center;
+
+    height: 100px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: box-shadow .4s;
+}
+
+
+
+
+.main-nav li a.active {
+    color: var(--clr-brand);
+    box-shadow: inset 0px -6px 0px var(--clr-brand);
+    cursor: default;
+
+}
+
+.main-nav li>a:hover {
+    box-shadow: inset 0px -6px 0px var(--clr-brand);
+}
+
+
+.btn-toggle-menu {
+    width: 50px;
+    font-size: 32px;
+    border-radius: .2em;
+}
+
+.main-nav li:nth-child(1) {
+    position: relative;
+}

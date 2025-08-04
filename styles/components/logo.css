@@ -1,0 +1,9 @@
+.logo {
+    font-family: eurofurence, sans-serif;
+    color: var(--clr-primary--3);
+    font-size: 2.5em;
+}
+
+.logo>span {
+    color: var(--clr-brand)
+}

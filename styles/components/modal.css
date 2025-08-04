@@ -1,0 +1,11 @@
+.details-modal form {
+    display: grid;
+    gap: 100px;
+    justify-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.details-modal button {
+    width: 200px;
+}
